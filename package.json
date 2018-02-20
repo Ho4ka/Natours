@@ -1,22 +1,22 @@
 {
-  "name": "natours",
-  "version": "1.0.0",
-  "description": "Landing page for natours",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ho4ka/Natours.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ho4ka/Natours/issues"
-  },
-  "homepage": "https://github.com/Ho4ka/Natours#readme",
-  "devDependencies": {
-    "node-sass": "^4.7.2"
-  }
+    "name": "natours",
+    "version": "1.0.0",
+    "description": "Landing page for natours",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ho4ka/Natours.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Ho4ka/Natours/issues"
+    },
+    "homepage": "https://github.com/Ho4ka/Natours#readme",
+    "devDependencies": {
+        "node-sass": "^4.7.2"
+    }
 }
