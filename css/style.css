@@ -137,6 +137,9 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-small {
+      margin-bottom: 1rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
@@ -176,11 +179,19 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all .2s;
+  transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 75em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 1.2rem;
+      padding: 1rem 3rem; } }
+  @media (max-width: 56.25em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 1.2rem;
+      padding: 1rem 3rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -207,7 +218,7 @@ body {
     background-color: #55c57a; }
 
 .btn::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -216,10 +227,10 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .4s; }
+  transition: all 0.4s; }
 
 .btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
@@ -229,7 +240,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
   padding: 3px;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .btn-text:hover {
   background-color: #55c57a;
@@ -546,12 +557,9 @@ body {
     transition: all .4s .2s; }
     @media (max-width: 56.25em) {
       .popup__content {
+        width: 100%;
         display: flex;
         flex-direction: column; } }
-    @media (max-width: 75em) {
-      .popup__content {
-        width: 100%;
-        display: flex; } }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
@@ -559,22 +567,28 @@ body {
       .popup__left {
         width: 100%;
         display: flex;
-        flex-direction: row;
-        height: 300px;
+        height: 200px;
         order: 2; } }
   .popup__right {
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        padding: 1.5rem 2.5rem; } }
     @media (max-width: 56.25em) {
       .popup__right {
+        padding: 1.5rem 2.5rem;
         width: 100%;
-        order: 1;
-        text-align: center; } }
+        text-align: center;
+        order: 1; } }
   .popup__img {
     display: block;
-    width: 50%; }
+    width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup__img {
+        width: 50%; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -588,6 +602,10 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 75em) {
+      .popup__text {
+        font-size: 1rem;
+        -moz-column-gap: 2rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
